@@ -40,7 +40,61 @@ class bubble
 
 //program run successfully date: 03-01-2021
 -===============================================================================
-q2: __
+q2: __showroom
+import java.util.*;
+class ShowRoom
+{
+    //data members
+    String name;
+    long mobno;
+    double cost,dis,amount;
+    //member methods
+    ShowRoom()//default constructor
+    {
+        name="";
+        mobno=0L;
+        cost=0.0;
+        dis=0.0;
+        amount=0.0;
+    }
+    void input()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the customer name,mobile number and cost");
+        name=sc.nextLine();
+        mobno=sc.nextLong();
+        cost=sc.nextDouble();
+    }
+    void calculate()
+    {
+        if(cost<=10000)
+        dis=5.0;
+        else if(cost<=20000)
+        dis=10.0;
+        else if(cost<=35000)
+        dis=15.0;
+        else
+        dis=20.0;
+        dis=dis/100.0*cost;
+        amount=cost-dis;
+    }
+    void display()
+    {
+        System.out.println("customer name="+name);
+        System.out.println("mobile number="+mobno);
+        System.out.println("amount ="+amount);
+    }
+    public static void main(String args[])
+    {
+        ShowRoom ob=new ShowRoom();
+        ob.input();
+        ob.calculate();
+        ob.display();
+    }//end of main
+}//end of class
+        
+        
+        
 
 
 
