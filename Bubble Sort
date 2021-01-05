@@ -93,9 +93,57 @@ class ShowRoom
     }//end of main
 }//end of class
 
-//program ran successfully date:04-01-2021
+//program ran successfully date:05-01-2021
 ==================================================================================================
-q3:
+q3:series
+
+import java.util.*;
+class series
+{//start of class
+    void series(int x,int n)
+    {
+        double s=0;
+        for(int k=1;k<=n;k++)
+        {
+            s=s+Math.pow(x,k);
+        }
+        System.out.println ("sum is "+s);
+    }
+    void series(int p)
+    {
+        int n;
+        for(int R=1;R<=p;R++)
+        {
+            n=(int)(Math.pow(R,3)-1);
+            System.out .println(n);
+        }
+    }
+    void series()
+    {
+        double a,b;
+        b=0;
+        for(int k=2;k<=10;k++)
+        {
+            a=1.0/k;
+            b=b+a;
+        }
+        System.out.println("sum is"+b);
+    }
+public static void main (String args[])
+{
+    series ob=new series();
+    
+    
+    
+}//end of main
+}//end of class
+
+//program run hocche na but error o dakhache na date:05-01-2021
+============================================================================================
+q4
+
+        
+        
         
         
         
